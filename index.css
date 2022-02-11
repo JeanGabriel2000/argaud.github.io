@@ -1,0 +1,43 @@
+body {
+    font-size: larger;
+}
+
+
+.name {
+    background-color: #ddd;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 
+      1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "header header header header"
+      "Photo   main   main  main"
+      "sidebar main2 main2 main2"
+      "sidebar   footer footer footer";
+  }
+  
+
+.Parcours{
+    grid-area: main;
+    background-color: rgb(135, 238, 186);
+}
+.Experience {
+    grid-area: main2;
+    background-color: rgb(194, 236, 239);
+}
+.Coordonnees {
+    grid-area: sidebar;
+    background: linear-gradient(rgb(87, 193, 209),rgb(239, 244, 245));
+}
+.Competences {
+    grid-area: footer;
+    background-color: rgb(241, 121, 121);
+}
+
+.photo{ 
+    grid-area : Photo
+}
